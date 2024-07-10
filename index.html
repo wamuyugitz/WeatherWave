@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -22,11 +23,16 @@
       <h1 id="city-name">Paris</h1>
       <div class="weather-details">
         <p>
-          Tuesday 14:55, moderate rain <br />
-          Humidity:87%, Wind: 7.2km/h
+          <span id="time">Tuesday 14:55, moderate rain</span> <br />
+          Humidity: <span id="highlight">87%</span>, Wind:
+          <span id="highlight">7.2km/h</span>
         </p>
         <div class="temp">
-          <h1>☀️ 24 &deg;C</h1>
+          <h1>
+            <span id="emoji-icon">☀️</span>
+            <span id="temperature-number">24</span
+            ><span id="metric">&deg;C</span>
+          </h1>
         </div>
       </div>
       <footer>
