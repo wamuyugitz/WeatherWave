@@ -33,3 +33,7 @@ WeatherWave is a sleek weather application that allows you to search for the cur
     cd WeatherWave
     ```
 3. Open `index.html` in your preferred web browser.
+
+## Hosted Application
+
+View the hosted WeatherWave application https://weatherwavee.netlify.app/
