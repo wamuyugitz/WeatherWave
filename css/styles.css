@@ -9,14 +9,14 @@ body {
     width: 45%;
     height: 60%;
     margin: 60px auto;
-    background-color: #fff;
+    background: linear-gradient(to right, #525252, #3d72b4);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 p {
-    color: #A9A6B3;
+    color: #fff;
 }
 
 input[type="text"] {
@@ -46,7 +46,6 @@ input[type="submit"] {
 .weather-details {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 0px;
 }
 
 #city-name {
@@ -54,6 +53,7 @@ input[type="submit"] {
     font-weight: 900;
     font-size: 40px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .weather-details p {
@@ -62,27 +62,46 @@ input[type="submit"] {
 
 }
 
+.icon {
+    position: relative;
+    top: -20px;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .temp {
-    margin-left: 150px;
-    position: relative;
-    top: -80px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
 }
 
-.temp h1 {
+
+#temperature-number {
+    position: relative;
+    top: -40px;
     font-size: 70px;
-}
+    font-weight: 600;
+    background: linear-gradient(45deg, #262626, #3a3a3a, #1c1c1c, #2c2c2c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-#emoji-icon {
-    position: relative;
-    font-size: 40px;
-    top: -10px;
 }
 
 #metric {
     position: relative;
     font-size: 25px;
     font-weight: 400;
-    top: -35px;
+    top: -55px;
+    background: linear-gradient(45deg, #262626, #3a3a3a, #1c1c1c, #2c2c2c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 
 }
 
@@ -91,6 +110,16 @@ footer {
 }
 
 #highlight {
+    font-weight: 500;
+    color: #F65282;
+}
+
+#wind {
+    font-weight: 500;
+    color: #F65282;
+}
+
+#units {
     font-weight: 500;
     color: #F65282;
 }

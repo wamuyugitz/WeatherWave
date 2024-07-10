@@ -2,6 +2,23 @@ function searchTemp(response) {
   let temperature = Math.round(response.data.temperature.current);
   let tempDisplay = document.querySelector("#temperature-number");
   tempDisplay.innerHTML = temperature;
+
+  let condition = response.data.condition.description;
+  let conditionDisplay = document.querySelector("#condition");
+  conditionDisplay.innerHTML = condition;
+
+  let humidity = response.data.temperature.humidity;
+  let humidityDisplay = document.querySelector("#highlight");
+  humidityDisplay.innerHTML = humidity;
+
+  let wind = response.data.wind.speed;
+  let windisplay = document.querySelector("#wind");
+  windisplay.innerHTML = wind;
+
+  let iconElement = document.querySelector(".icon");
+
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
+
   console.log(response);
 }
 

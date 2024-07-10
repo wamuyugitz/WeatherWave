@@ -23,16 +23,21 @@
       <h1 id="city-name">Paris</h1>
       <div class="weather-details">
         <p>
-          <span id="time">Tuesday 14:55, moderate rain</span> <br />
-          Humidity: <span id="highlight">87%</span>, Wind:
-          <span id="highlight">7.2km/h</span>
+          <span id="time">Tuesday 14:55</span>,
+          <span id="condition">moderate rain</span> <br />
+          Humidity: <span id="highlight">87</span><span id="units">%</span>,
+          Wind: <span id="wind">7.2</span><span id="units">km/h</span>
         </p>
         <div class="temp">
-          <h1>
-            <span id="emoji-icon">☀️</span>
-            <span id="temperature-number">24</span
-            ><span id="metric">&deg;C</span>
-          </h1>
+          <div class="icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <span id="temperature-number">24</span><span id="metric">&deg;C</span>
         </div>
       </div>
       <footer>
