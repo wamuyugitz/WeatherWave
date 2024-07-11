@@ -63,3 +63,28 @@ if (minutes < 10) {
 
 let currentTime = document.querySelector("#time");
 currentTime.innerHTML = `${currentDay} ${hour}:${minutes}`;
+
+function displayForecast(params) {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tues", "Wed", "Thurs", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+  <div class="weather-forecast-date">${day}</div>
+  <div class="weather-forecast-icon">🌤️</div>
+  <div class="weather-forecast-temperatures">
+    <div class="weather-forecast-temperature">
+      <strong>15&deg; </strong>
+    </div>
+    9&deg;
+  </div>
+</div>`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
